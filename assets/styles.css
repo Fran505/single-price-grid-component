@@ -1,0 +1,175 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Cyan: hsl(179, 62%, 43%)
+- Bright Yellow: hsl(71, 73%, 54%)
+
+### Neutral
+
+- Light Gray: hsl(204, 43%, 93%)
+- Grayish Blue: hsl(218, 22%, 67%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 16px
+
+### Font
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700  */
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color:hsl(204, 43%, 93%) ;
+    font-family: 'Karla', sans-serif;
+
+}
+
+.container {
+    position: relative;
+    top: 200px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25%; 
+       
+}
+
+.card__top {
+    height: 215px;
+    padding: 1.5rem 2.5rem;
+    border-radius: 10px 10px 0px 0px;
+    background-color: white;
+    
+}
+
+.col {
+    color: white;
+}
+
+.col__left, .col__right{
+    position: absolute;
+    top:215px;
+    height: 250px;
+    width: 50%;
+    padding: 1rem 2rem 1rem 2.5rem;
+}
+
+.col__left{
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0px 0px 0px 10px;
+}
+
+.col__right{
+    background-color: rgb(74, 190, 189);
+    right: 0;
+    border-radius: 0px 0px 10px 0px;
+}
+
+
+.title {
+    color:  hsl(179, 62%, 43%);
+}
+
+.card__text {
+    line-height: 1.5rem;
+}
+
+.card__title--green{
+    color: hsl(71, 73%, 54%);
+}
+
+.card__text--light {
+    color: rgb(0, 0, 0, .5);
+}
+
+.card__text--big {
+    font-size: 2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.card__text--small{
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.card__list{
+    padding-left: 0;
+    line-height: 1.3rem;
+    list-style: none;
+    font-weight: 200;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+.button {
+    display: block;
+    width: 16rem;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0.5rem;
+    color: white;
+    box-shadow: 10px 6px 10px 1px rgba(0, 0, 0, 0.129);
+    background-color: hsl(71, 73%, 54%);
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+@media (max-width: 500px){
+    body{
+        overflow-x: hidden;
+    }
+
+    .container{
+        top: 5rem;
+        width: auto;
+        padding-bottom: 4rem;
+        margin-bottom: 4rem;
+    }
+    
+    .col {
+        position: relative;
+        width: auto;
+        height: 250px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 0;
+        border-radius: 0;
+    }
+
+    .card__top{
+        height: 300px;
+    }
+
+    
+
+
+
+}
+
+/* frontend mentor code */
+.attribution { font-size: 11px; text-align: center; position: fixed; bottom: 0;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
